@@ -135,7 +135,7 @@ classifieds-cms/
 
 1. **Clone or Download the Project**
    ```bash
-   git clone [repository-url]
+   git clone [https://github.com/noah-s-dev/classifieds-cms]
    cd classifieds-cms
    ```
 
@@ -239,17 +239,8 @@ classifieds-cms/
 
 **License for RiverTheme**
 
-[RiverTheme.com](https://RiverTheme.com) makes this project available for demo, instructional, and personal use. You can ask for or buy a license from [RiverTheme.com](https://RiverTheme.com) if you want a pro website, sophisticated features, or expert setup and assistance. A Pro license is needed for production deployments, customizations, and commercial use.
+RiverTheme makes this project available for demo, instructional, and personal use. You can ask for or buy a license from [RiverTheme.com](https://RiverTheme.com) if you want a pro website, sophisticated features, or expert setup and assistance. A Pro license is needed for production deployments, customizations, and commercial use.
 
 **Disclaimer**
 
 The free version is offered "as is" with no warranty and might not function on all devices or browsers. It might also have some coding or security flaws. For additional information or to get a Pro license, please get in touch with [RiverTheme.com](https://RiverTheme.com).
-
----
-
-## 🤝 Support
-
-For technical support, feature requests, or licensing inquiries:
-- **Website**: [RiverTheme.com](https://RiverTheme.com)
-- **Email**: Contact through the website
-- **Documentation**: Refer to this README and inline code comments
