@@ -1,0 +1,21 @@
+# Simple .htaccess for Classifieds CMS
+
+# Enable rewrite engine
+RewriteEngine On
+
+# Basic security - hide sensitive files
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sql|bak|backup)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Prevent directory browsing
+Options -Indexes
+
+# Default charset
+AddDefaultCharset UTF-8
+
+# Basic error handling
+ErrorDocument 404 /error.php?code=404
+ErrorDocument 500 /error.php?code=500
+
