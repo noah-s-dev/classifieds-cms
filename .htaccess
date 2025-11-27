@@ -3,6 +3,10 @@
 # Enable rewrite engine
 RewriteEngine On
 
+# Set the base path for rewrites (uncomment and adjust if project is in a subdirectory)
+# Example: RewriteBase /project_name
+# RewriteBase /
+
 # Basic security - hide sensitive files
 <FilesMatch "\.(htaccess|htpasswd|ini|log|sql|bak|backup)$">
     Order Allow,Deny
@@ -15,7 +19,7 @@ Options -Indexes
 # Default charset
 AddDefaultCharset UTF-8
 
-# Basic error handling
-ErrorDocument 404 /error.php?code=404
-ErrorDocument 500 /error.php?code=500
+# Basic error handling (using relative paths for subdirectory support)
+ErrorDocument 404 error.php?code=404
+ErrorDocument 500 error.php?code=500
 

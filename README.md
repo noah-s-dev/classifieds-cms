@@ -135,16 +135,21 @@ classifieds-cms/
 
 1. **Clone or Download the Project**
    ```bash
-   git clone [https://github.com/noah-s-dev/classifieds-cms]
+   git clone https://github.com/noah-s-dev/classifieds-cms.git
    cd classifieds-cms
    ```
 
 2. **Configure Web Server**
-   - Place the project in your web server's document root
+   - Place the project in your web server's document root (e.g., `htdocs/project_name` or `www/project_name`)
+   - If using Apache, ensure mod_rewrite is enabled
    - Ensure the `assets/uploads/` directory is writable
    ```bash
    chmod 755 assets/uploads/
    ```
+   - **For subdirectory installation**: If the project is in a subdirectory, uncomment and set the `RewriteBase` directive in `.htaccess`:
+     ```
+     RewriteBase /project_name
+     ```
 
 3. **Database Setup**
    - Create a new MySQL database
@@ -167,7 +172,8 @@ classifieds-cms/
    - Configure rate limiting parameters
 
 6. **Access the Application**
-   - Open your browser and navigate to the project URL
+   - Open your browser and navigate to: `http://localhost/project_name` (or `http://localhost` if in root)
+   - **Note**: The application should be accessed without a port number (e.g., `http://localhost/project_name`, not `http://localhost:8080/project_name`)
    - Default admin credentials:
      - Username: `admin`
      - Password: `admin123`
